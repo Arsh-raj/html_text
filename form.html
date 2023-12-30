@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<script type="text/javascript">  
+function getcube(){  
+var number=document.getElementById("number").value;  
+document.getElementById("show").innerHTML="Name"+number;
+var e = document.getElementById("date");
+var  value =e.value;
+var text = e.options[e.selectedIndex].text;
+
+document.getElementById("showdat").innerHTML="date:"+text;
+
+var m = document.getElementById("month");
+var  value =m.value;
+var text = m.options[m.selectedIndex].text;
+
+document.getElementById("showmm").innerHTML="Month:"+text;
+
+}  
+</script>  
+</head>
+<body>
+
+ 
+Enter No:<input type="text" id="number" name="number"/><br/>  
+
+ <p>Date of birth
+     <select id="date" value="date">
+      <option id="dt" value="select">Select Date</option>
+       <option value="1">1</option>
+        <option value="2">2</option>
+            <option value="3">3</option>      
+            <option value="4">4</option>
+	 <option value="5">5</option>
+        </select>
+<select id="month">
+      <option value="select">Select Month</option>
+       <option value="jan">January</option>
+        <option value="2">febuary</option>
+            <option value="3">March</option>      
+            <option value="4">April</option>
+	 <option value="5">May</option>
+        </select>
+
+  <select id="year">
+      <option value="select">Select year</option>
+       <option value="jan">1998</option>
+        <option value="2">1999</option>
+            <option value="3">2000</option>      
+            <option value="4">2001</option>
+	 <option value="5">2002</option>
+        </select>
+   <p>Gender
+        <input type="radio" id="m">Male<input type="radio"  id="f">Female
+<p><input type="checkbox"> I accept the term condition.
+<p><input type="button" value="Submit" onclick="getcube()"/>  
+<p id="show"></p>
+<p id="showdt">
+<p id="showdat">
+<p id="showmm">
+</html>
